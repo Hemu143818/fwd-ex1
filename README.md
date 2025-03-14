@@ -3,7 +3,7 @@
 ## Name:KUNATI HEMANTH YADAV
 ## Reg : 212224100033
 ## AIM:
-To develop a simple webserver to serve html pages and display the simple webserver interface 
+To develop a simple webserver to serve html pages and display the simple layout .
 
 ## DESIGN STEPS:
 ### Step 1: 
@@ -46,51 +46,56 @@ content = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webserver Interface</title>
+    <title>Skyline Solutions</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
         }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        input, button {
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #4CAF50;
+        header, footer {
+            background-color: #2c3e50;
             color: white;
-            cursor: pointer;
+            text-align: center;
+            padding: 15px 0;
         }
-        button:hover {
-            background-color: #45a049;
+        main {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Simple Webserver Interface</h2>
-        <form action="/submit" method="POST">
-            <label for="message">Enter your message:</label><br>
-            <input type="text" id="message" name="message" required><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <header>
+        <h1>Skyline Solutions</h1>
+        <p>Innovating Technology in New York & San Francisco</p>
+    </header>
+
+    <main>
+        <h2>About Us</h2>
+        <p>Skyline Solutions is a leading tech company providing cutting-edge web solutions to clients across New York and San Francisco. Our mission is to empower businesses through innovative digital experiences.</p>
+        
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Cloud Computing</li>
+            <li>Artificial Intelligence Solutions</li>
+            <li>Data Security & Analysis</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Skyline Solutions | Serving New York & San Francisco</p>
+    </footer>
 </body>
 </html>
+
+
 
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -109,7 +114,9 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/51289b5b-d9f3-4262-8864-0f549acf25fe)
+![image](https://github.com/user-attachments/assets/0d66fe7b-a581-4f8e-be9f-1ef5ec4b70c6)
+
+![image](https://github.com/user-attachments/assets/43a27518-2189-42db-aed2-038cce1afb69)
 
 
 
